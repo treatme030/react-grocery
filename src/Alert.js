@@ -5,7 +5,7 @@ const Alert = ({ type, msg, removeAlert, list }) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             removeAlert()
-        },5000)
+        },3000)
         return () => clearTimeout(timeout)
     },[list]) // 마지막 리스트 상태값 변경되고 마지막 alert가 3초 뒤 사라짐 
     return (
